@@ -19,6 +19,9 @@ function limpar(){
     reset();
     localStorage.removeItem('numeros');
     localStorage.removeItem('sorteio');
+    document.getElementById('choice').innerHTML="";
+    document.getElementById('choice-label').innerHTML="";
+    montaTelaEscolhas();
 }
 
 if(!!localStorage.getItem('numeros')){
@@ -56,10 +59,6 @@ function montaTelaEscolhas()
         tela.append(div);
     });
 }
-
-
-
-
 
 function vertabela(){
     $('#choice-container').hide();
