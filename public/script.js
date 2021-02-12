@@ -16,12 +16,15 @@ function reset(){
 reset();
 
 function limpar(){
-    reset();
-    localStorage.removeItem('numeros');
-    localStorage.removeItem('sorteio');
-    document.getElementById('choice').innerHTML="";
-    document.getElementById('choice-label').innerHTML="";
-    montaTelaEscolhas();
+    var ok = confirm('tem certeza que deseja recomeçar o jogo?');
+    if(ok){
+        reset();
+        localStorage.removeItem('numeros');
+        localStorage.removeItem('sorteio');
+        document.getElementById('choice').innerHTML="";
+        document.getElementById('choice-label').innerHTML="";
+        montaTelaEscolhas();
+    }
 }
 
 if(!!localStorage.getItem('numeros')){
