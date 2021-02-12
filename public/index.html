@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINGO TERCEEIRA IDADE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="numeros.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+
+    <div class="container" id="choice-container">
+
+        <div class="text-center" style="margin:15px 0px 15px 0px">
+            <button type="button" class="btn btn-lg btn-choice" onclick="vertabela()">Ver Tabela</button>
+        </div>
+        
+        <div class="text-center justify-content-center" style="margin-top:50px;">
+            <div style="height: 100px;color:white">
+                <h1 id="choice" style="font-size:100px">0</h1>
+            </div>
+            <div style="margin-top:50px;margin-bottom: 50px;min-height: 30px;">
+                <h2 id="choice-label" style="font-size:30px;color:white"></h2>
+            </div>
+
+            <button type="button" class="btn btn-lg btn-choice" onclick="escolheNumero()">Escolhe Numero</button>
+        </div>
+
+    </div>
+
+    <div class="container-fluid" id="tabela-container">
+        <div class="text-center" style="margin:15px 0px 15px 0px">
+            <button type="button" class="btn btn-lg btn-choice" onclick="verchoice()">Voltar</button>
+        </div>
+
+        <div id="escolhas" class="lista"></div>
+    </div>
+    
+    
+</body>
+</html>

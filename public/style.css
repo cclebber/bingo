@@ -1,0 +1,26 @@
+body{
+    background:#9F44D3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.btn-choice{
+    background-image: linear-gradient(to bottom right, #FEB692, #EA5455);
+    border: none;
+    color: white;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.lista{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
